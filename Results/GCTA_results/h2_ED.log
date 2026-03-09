@@ -1,0 +1,85 @@
+*******************************************************************
+* Genome-wide Complex Trait Analysis (GCTA)
+* version v1.95.0 Linux
+* Built at Jul 21 2025 17:30:18, by GCC 8.4
+* (C) 2010-present, Yang Lab, Westlake University
+* Please report bugs to Jian Yang <jian.yang@westlake.edu.cn>
+*******************************************************************
+Analysis started at 12:55:23 UTC on Mon Jan 12 2026.
+Hostname: 12fe3e337310
+
+Accepted options:
+--grm /mount/src/genetic_correlation/GCTA/CAU_project1/20241127_twb1_2_impu_combine_sameA1A2_sameA1A2_all_20230503_CAU_grm_unrelated
+--pheno /mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/pheno_ED.txt
+--qcovar /mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/qcov_ED.txt
+--covar /mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/cov_ED.txt
+--reml
+--thread-num 96
+--out /mount/src/genetic_correlation/GCTA/CAU_project1/GCTA_results/h2_ED
+
+Note: the program will be running on 96 threads.
+
+Reading IDs of the GRM from [/mount/src/genetic_correlation/GCTA/CAU_project1/20241127_twb1_2_impu_combine_sameA1A2_sameA1A2_all_20230503_CAU_grm_unrelated.grm.id].
+19478 IDs are read from [/mount/src/genetic_correlation/GCTA/CAU_project1/20241127_twb1_2_impu_combine_sameA1A2_sameA1A2_all_20230503_CAU_grm_unrelated.grm.id].
+Reading the GRM from [/mount/src/genetic_correlation/GCTA/CAU_project1/20241127_twb1_2_impu_combine_sameA1A2_sameA1A2_all_20230503_CAU_grm_unrelated.grm.bin].
+GRM for 19478 individuals are included from [/mount/src/genetic_correlation/GCTA/CAU_project1/20241127_twb1_2_impu_combine_sameA1A2_sameA1A2_all_20230503_CAU_grm_unrelated.grm.bin].
+Reading phenotypes from [/mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/pheno_ED.txt].
+Non-missing phenotypes of 19883 individuals are included from [/mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/pheno_ED.txt].
+Reading quantitative covariate(s) from [/mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/qcov_ED.txt].
+11 quantitative covariate(s) of 19883 individuals are included from [/mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/qcov_ED.txt].
+Reading discrete covariate(s) from [/mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/cov_ED.txt].
+1 discrete covariate(s) of 19883 individuals are included from [/mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/cov_ED.txt].
+
+11 quantitative variable(s) included as covariate(s).
+1 discrete variable(s) included as covariate(s).
+19478 individuals are in common in these files.
+
+Performing  REML analysis ... (Note: may take hours depending on sample size).
+19478 observations, 13 fixed effect(s), and 2 variance component(s)(including residual variance).
+Calculating prior values of variance components by EM-REML ...
+Updated prior values: 0.442838 0.453919
+logL: -7338.28
+Running AI-REML algorithm ...
+Iter.	logL	V(G)	V(e)	
+1	-7175.47	0.28896	0.54090	
+2	-7025.40	0.21175	0.58649	
+3	-6970.59	0.16787	0.61301	
+4	-6948.28	0.14108	0.62947	
+5	-6938.63	0.12396	0.64012	
+6	-6934.29	0.11270	0.64721	
+7	-6932.29	0.10514	0.65203	
+8	-6931.35	0.09999	0.65535	
+9	-6930.91	0.08880	0.66264	
+10	-6930.49	0.08840	0.66308	
+11	-6930.49	0.08838	0.66311	
+12	-6930.49	0.08838	0.66311	
+Log-likelihood ratio converged.
+
+Calculating the logLikelihood for the reduced model ...
+(variance component 1 is dropped from the model)
+Calculating prior values of variance components by EM-REML ...
+Updated prior values: 0.75126
+logL: -7306.41951
+Running AI-REML algorithm ...
+Iter.	logL	V(e)	
+1	-6953.26	0.75121	
+2	-6953.26	0.75117	
+3	-6953.26	0.75110	
+4	-6953.26	0.75110	
+Log-likelihood ratio converged.
+
+Summary result of REML analysis:
+Source	Variance	SE
+V(G)	0.088380	0.013526
+V(e)	0.663108	0.014531
+Vp	0.751488	0.007642
+V(G)/Vp	0.117607	0.017864
+
+Sampling variance/covariance of the estimates of variance components:
+1.829626e-04	-1.678556e-04	
+-1.678556e-04	2.111507e-04	
+
+Summary result of REML analysis has been saved in the file [/mount/src/genetic_correlation/GCTA/CAU_project1/GCTA_results/h2_ED.hsq].
+
+Analysis finished at 13:04:56 UTC on Mon Jan 12 2026
+Overall computational time: 9 minutes 32 sec.

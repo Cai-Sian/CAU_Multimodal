@@ -1,0 +1,87 @@
+*******************************************************************
+* Genome-wide Complex Trait Analysis (GCTA)
+* version v1.95.0 Linux
+* Built at Jul 21 2025 17:30:18, by GCC 8.4
+* (C) 2010-present, Yang Lab, Westlake University
+* Please report bugs to Jian Yang <jian.yang@westlake.edu.cn>
+*******************************************************************
+Analysis started at 13:31:27 UTC on Mon Jan 12 2026.
+Hostname: 12fe3e337310
+
+Accepted options:
+--grm /mount/src/genetic_correlation/GCTA/CAU_project1/20241127_twb1_2_impu_combine_sameA1A2_sameA1A2_all_20230503_CAU_grm_unrelated
+--pheno /mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/pheno_diameter.txt
+--qcovar /mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/qcov_diameter.txt
+--covar /mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/cov_diameter.txt
+--reml
+--thread-num 96
+--out /mount/src/genetic_correlation/GCTA/CAU_project1/GCTA_results/h2_diameter
+
+Note: the program will be running on 96 threads.
+
+Reading IDs of the GRM from [/mount/src/genetic_correlation/GCTA/CAU_project1/20241127_twb1_2_impu_combine_sameA1A2_sameA1A2_all_20230503_CAU_grm_unrelated.grm.id].
+19478 IDs are read from [/mount/src/genetic_correlation/GCTA/CAU_project1/20241127_twb1_2_impu_combine_sameA1A2_sameA1A2_all_20230503_CAU_grm_unrelated.grm.id].
+Reading the GRM from [/mount/src/genetic_correlation/GCTA/CAU_project1/20241127_twb1_2_impu_combine_sameA1A2_sameA1A2_all_20230503_CAU_grm_unrelated.grm.bin].
+GRM for 19478 individuals are included from [/mount/src/genetic_correlation/GCTA/CAU_project1/20241127_twb1_2_impu_combine_sameA1A2_sameA1A2_all_20230503_CAU_grm_unrelated.grm.bin].
+Reading phenotypes from [/mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/pheno_diameter.txt].
+Non-missing phenotypes of 19881 individuals are included from [/mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/pheno_diameter.txt].
+Reading quantitative covariate(s) from [/mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/qcov_diameter.txt].
+11 quantitative covariate(s) of 19881 individuals are included from [/mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/qcov_diameter.txt].
+Reading discrete covariate(s) from [/mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/cov_diameter.txt].
+1 discrete covariate(s) of 19881 individuals are included from [/mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/cov_diameter.txt].
+
+11 quantitative variable(s) included as covariate(s).
+1 discrete variable(s) included as covariate(s).
+19476 individuals are in common in these files.
+
+Performing  REML analysis ... (Note: may take hours depending on sample size).
+19476 observations, 13 fixed effect(s), and 2 variance component(s)(including residual variance).
+Calculating prior values of variance components by EM-REML ...
+Updated prior values: 0.417358 0.418987
+logL: -6239.09
+Running AI-REML algorithm ...
+Iter.	logL	V(G)	V(e)	
+1	-5860.43	0.27658	0.47864	
+2	-5673.46	0.21300	0.50345	
+3	-5608.88	0.17851	0.51598	
+4	-5583.04	0.15797	0.52309	
+5	-5571.97	0.14503	0.52745	
+6	-5567.04	0.13660	0.53028	
+7	-5564.79	0.13097	0.53218	
+8	-5563.75	0.12716	0.53349	
+9	-5563.27	0.12455	0.53441	
+10	-5563.04	0.11887	0.53646	
+11	-5562.83	0.11867	0.53667	
+12	-5562.83	0.11866	0.53668	
+13	-5562.83	0.11866	0.53668	
+Log-likelihood ratio converged.
+
+Calculating the logLikelihood for the reduced model ...
+(variance component 1 is dropped from the model)
+Calculating prior values of variance components by EM-REML ...
+Updated prior values: 0.65497
+logL: -6323.45603
+Running AI-REML algorithm ...
+Iter.	logL	V(e)	
+1	-5616.53	0.65490	
+2	-5616.53	0.65485	
+3	-5616.53	0.65475	
+4	-5616.53	0.65475	
+5	-5616.53	0.65475	
+Log-likelihood ratio converged.
+
+Summary result of REML analysis:
+Source	Variance	SE
+V(G)	0.118660	0.012333
+V(e)	0.536685	0.012690
+Vp	0.655345	0.006692
+V(G)/Vp	0.181065	0.018506
+
+Sampling variance/covariance of the estimates of variance components:
+1.521000e-04	-1.341808e-04	
+-1.341808e-04	1.610486e-04	
+
+Summary result of REML analysis has been saved in the file [/mount/src/genetic_correlation/GCTA/CAU_project1/GCTA_results/h2_diameter.hsq].
+
+Analysis finished at 13:42:04 UTC on Mon Jan 12 2026
+Overall computational time: 10 minutes 36 sec.

@@ -1,0 +1,82 @@
+*******************************************************************
+* Genome-wide Complex Trait Analysis (GCTA)
+* version v1.95.0 Linux
+* Built at Jul 21 2025 17:30:18, by GCC 8.4
+* (C) 2010-present, Yang Lab, Westlake University
+* Please report bugs to Jian Yang <jian.yang@westlake.edu.cn>
+*******************************************************************
+Analysis started at 13:14:11 UTC on Mon Jan 12 2026.
+Hostname: 12fe3e337310
+
+Accepted options:
+--grm /mount/src/genetic_correlation/GCTA/CAU_project1/20241127_twb1_2_impu_combine_sameA1A2_sameA1A2_all_20230503_CAU_grm_unrelated
+--pheno /mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/pheno_PI.txt
+--qcovar /mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/qcov_PI.txt
+--covar /mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/cov_PI.txt
+--reml
+--thread-num 96
+--out /mount/src/genetic_correlation/GCTA/CAU_project1/GCTA_results/h2_PI
+
+Note: the program will be running on 96 threads.
+
+Reading IDs of the GRM from [/mount/src/genetic_correlation/GCTA/CAU_project1/20241127_twb1_2_impu_combine_sameA1A2_sameA1A2_all_20230503_CAU_grm_unrelated.grm.id].
+19478 IDs are read from [/mount/src/genetic_correlation/GCTA/CAU_project1/20241127_twb1_2_impu_combine_sameA1A2_sameA1A2_all_20230503_CAU_grm_unrelated.grm.id].
+Reading the GRM from [/mount/src/genetic_correlation/GCTA/CAU_project1/20241127_twb1_2_impu_combine_sameA1A2_sameA1A2_all_20230503_CAU_grm_unrelated.grm.bin].
+GRM for 19478 individuals are included from [/mount/src/genetic_correlation/GCTA/CAU_project1/20241127_twb1_2_impu_combine_sameA1A2_sameA1A2_all_20230503_CAU_grm_unrelated.grm.bin].
+Reading phenotypes from [/mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/pheno_PI.txt].
+Non-missing phenotypes of 19879 individuals are included from [/mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/pheno_PI.txt].
+Reading quantitative covariate(s) from [/mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/qcov_PI.txt].
+11 quantitative covariate(s) of 19879 individuals are included from [/mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/qcov_PI.txt].
+Reading discrete covariate(s) from [/mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/cov_PI.txt].
+1 discrete covariate(s) of 19879 individuals are included from [/mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/cov_PI.txt].
+
+11 quantitative variable(s) included as covariate(s).
+1 discrete variable(s) included as covariate(s).
+19474 individuals are in common in these files.
+
+Performing  REML analysis ... (Note: may take hours depending on sample size).
+19474 observations, 13 fixed effect(s), and 2 variance component(s)(including residual variance).
+Calculating prior values of variance components by EM-REML ...
+Updated prior values: 0.472631 0.492176
+logL: -8685.98
+Running AI-REML algorithm ...
+Iter.	logL	V(G)	V(e)	
+1	-8664.85	0.34189	0.58438	
+2	-8572.42	0.26578	0.64212	
+3	-8533.66	0.21903	0.67936	
+4	-8516.82	0.18926	0.70387	
+5	-8509.30	0.16982	0.72023	
+6	-8505.87	0.15691	0.73127	
+7	-8504.30	0.14823	0.73877	
+8	-8503.56	0.14235	0.74389	
+9	-8503.21	0.12967	0.75499	
+10	-8502.91	0.12956	0.75514	
+11	-8502.91	0.12956	0.75514	
+Log-likelihood ratio converged.
+
+Calculating the logLikelihood for the reduced model ...
+(variance component 1 is dropped from the model)
+Calculating prior values of variance components by EM-REML ...
+Updated prior values: 0.88441
+logL: -8604.62199
+Running AI-REML algorithm ...
+Iter.	logL	V(e)	
+1	-8540.82	0.88439	
+2	-8540.82	0.88437	
+Log-likelihood ratio converged.
+
+Summary result of REML analysis:
+Source	Variance	SE
+V(G)	0.129561	0.015996
+V(e)	0.755145	0.016899
+Vp	0.884706	0.009011
+V(G)/Vp	0.146446	0.017874
+
+Sampling variance/covariance of the estimates of variance components:
+2.558670e-04	-2.301181e-04	
+-2.301181e-04	2.855753e-04	
+
+Summary result of REML analysis has been saved in the file [/mount/src/genetic_correlation/GCTA/CAU_project1/GCTA_results/h2_PI.hsq].
+
+Analysis finished at 13:22:44 UTC on Mon Jan 12 2026
+Overall computational time: 8 minutes 33 sec.

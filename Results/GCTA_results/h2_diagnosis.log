@@ -1,0 +1,88 @@
+*******************************************************************
+* Genome-wide Complex Trait Analysis (GCTA)
+* version v1.95.0 Linux
+* Built at Jul 21 2025 17:30:18, by GCC 8.4
+* (C) 2010-present, Yang Lab, Westlake University
+* Please report bugs to Jian Yang <jian.yang@westlake.edu.cn>
+*******************************************************************
+Analysis started at 08:13:19 UTC on Tue Jan 13 2026.
+Hostname: 12fe3e337310
+
+Accepted options:
+--grm /mount/src/genetic_correlation/GCTA/CAU_project1/20241127_twb1_2_impu_combine_sameA1A2_sameA1A2_all_20230503_CAU_grm_unrelated
+--pheno /mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/pheno_diagnosis.txt
+--qcovar /mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/qcov_diagnosis.txt
+--covar /mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/cov_diagnosis.txt
+--reml
+--prevalence 0.323
+--thread-num 120
+--out /mount/src/genetic_correlation/GCTA/CAU_project1/GCTA_results/h2_diagnosis
+
+Note: the program will be running on 120 threads.
+
+Reading IDs of the GRM from [/mount/src/genetic_correlation/GCTA/CAU_project1/20241127_twb1_2_impu_combine_sameA1A2_sameA1A2_all_20230503_CAU_grm_unrelated.grm.id].
+19478 IDs are read from [/mount/src/genetic_correlation/GCTA/CAU_project1/20241127_twb1_2_impu_combine_sameA1A2_sameA1A2_all_20230503_CAU_grm_unrelated.grm.id].
+Reading the GRM from [/mount/src/genetic_correlation/GCTA/CAU_project1/20241127_twb1_2_impu_combine_sameA1A2_sameA1A2_all_20230503_CAU_grm_unrelated.grm.bin].
+GRM for 19478 individuals are included from [/mount/src/genetic_correlation/GCTA/CAU_project1/20241127_twb1_2_impu_combine_sameA1A2_sameA1A2_all_20230503_CAU_grm_unrelated.grm.bin].
+Reading phenotypes from [/mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/pheno_diagnosis.txt].
+Non-missing phenotypes of 19883 individuals are included from [/mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/pheno_diagnosis.txt].
+Reading quantitative covariate(s) from [/mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/qcov_diagnosis.txt].
+11 quantitative covariate(s) of 19883 individuals are included from [/mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/qcov_diagnosis.txt].
+Reading discrete covariate(s) from [/mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/cov_diagnosis.txt].
+1 discrete covariate(s) of 19883 individuals are included from [/mount/src/genetic_correlation/GCTA/CAU_project1/sample_files/cov_diagnosis.txt].
+Assuming a disease phenotype for a case-control study: 6300 cases and 13178 controls 
+11 quantitative variable(s) included as covariate(s).
+1 discrete variable(s) included as covariate(s).
+19478 individuals are in common in these files.
+
+Performing  REML analysis ... (Note: may take hours depending on sample size).
+19478 observations, 13 fixed effect(s), and 2 variance component(s)(including residual variance).
+Calculating prior values of variance components by EM-REML ...
+Updated prior values: 0.100621 0.105159
+logL: 6633.19
+Running AI-REML algorithm ...
+Iter.	logL	V(G)	V(e)	
+1	6698.57	0.06188	0.13044	
+2	6865.60	0.04143	0.14503	
+3	6930.23	0.02959	0.15399	
+4	6957.07	0.02233	0.15969	
+5	6968.75	0.01769	0.16342	
+6	6974.00	0.01466	0.16591	
+7	6976.41	0.01263	0.16760	
+8	6977.54	0.01125	0.16875	
+9	6978.08	0.01032	0.16955	
+10	6978.33	0.00827	0.17129	
+11	6978.57	0.00821	0.17136	
+12	6978.57	0.00821	0.17136	
+13	6978.57	0.00821	0.17136	
+Log-likelihood ratio converged.
+
+Calculating the logLikelihood for the reduced model ...
+(variance component 1 is dropped from the model)
+Calculating prior values of variance components by EM-REML ...
+Updated prior values: 0.17958
+logL: 6796.21433
+Running AI-REML algorithm ...
+Iter.	logL	V(e)	
+1	6974.80	0.17957	
+2	6974.80	0.17956	
+Log-likelihood ratio converged.
+
+Summary result of REML analysis:
+Source	Variance	SE
+V(G)	0.008207	0.003008
+V(e)	0.171360	0.003421
+Vp	0.179567	0.001821
+V(G)/Vp	0.045703	0.016729
+The estimate of variance explained on the observed scale is transformed to that on the underlying liability scale:
+(Proportion of cases in the sample = 0.323442; User-specified disease prevalence = 0.323000)
+V(G)/Vp_L	0.077488	0.028364
+
+Sampling variance/covariance of the estimates of variance components:
+9.047550e-06	-8.717873e-06	
+-8.717873e-06	1.170477e-05	
+
+Summary result of REML analysis has been saved in the file [/mount/src/genetic_correlation/GCTA/CAU_project1/GCTA_results/h2_diagnosis.hsq].
+
+Analysis finished at 08:23:23 UTC on Tue Jan 13 2026
+Overall computational time: 10 minutes 4 sec.

@@ -1,0 +1,14 @@
+Source	Variance	SE
+V(G)	0.008207	0.003008
+V(e)	0.171360	0.003421
+Vp	0.179567	0.001821
+V(G)/Vp	0.045703	0.016729
+The estimate of variance explained on the observed scale is transformed to that on the underlying scale:
+(Proportion of cases in the sample = 0.323442; User-specified disease prevalence = 0.323000)
+V(G)/Vp_L	0.077488	0.028364
+logL	6978.568
+logL0	6974.796
+LRT	7.544
+df	1
+Pval	3.0106e-03
+n	19478
