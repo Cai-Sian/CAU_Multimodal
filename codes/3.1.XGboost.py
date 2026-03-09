@@ -67,7 +67,7 @@ img_featuremap = '../multimodal_inputs/model_ResNet50_5000epochs_extract_feature
 demo_file = '../multimodal_inputs/TWB_demo.txt'
 PRS_file = '../multimodal_inputs/PRS_value.txt'
 
-save_dir = '../for_paper_CAU1/Results/Mulimodal'
+save_dir = '../Results/Mulimodal'
 
 model_name = 'Multimodal_xgb'
 
