@@ -1,1 +1,2 @@
 model_ResNet50_5000epochs_extract_feature.txt filter=lfs diff=lfs merge=lfs -text
+twb_MAF.afreq filter=lfs diff=lfs merge=lfs -text
